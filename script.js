@@ -19,12 +19,12 @@ function setupMenuToggle() {
     }
   });
 
-  document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', () => {
+  nav.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
       nav.classList.remove('show');
       menuToggle.innerHTML = '☰';
       menuToggle.setAttribute('aria-expanded', 'false');
-    });
+    }
   });
 }
 
@@ -37,7 +37,7 @@ window.addEventListener('resize', () => {
     menuToggle.setAttribute('aria-expanded', 'false');
   }
 });
-
+ 
 const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
   if (!header) return;
@@ -69,4 +69,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     }
   });
+});
+
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+if (localStorage.getItem('theme') === 'light') {
+  body.classList.add('light-theme');
+  themeToggle.innerHTML = '☀️'; 
+} else {
+  themeToggle.innerHTML = '🌙'; 
+}
+
+themeToggle.addEventListener('click', () => {
+  body.classList.toggle('light-theme');
+  if (body.classList.contains('light-theme')) {
+    localStorage.setItem('theme', 'light');
+    themeToggle.innerHTML = '☀️';
+  } else {
+    localStorage.setItem('theme', 'dark');
+    themeToggle.innerHTML = '🌙';
+  }
 });

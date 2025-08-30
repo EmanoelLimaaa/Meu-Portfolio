@@ -12,11 +12,11 @@
   <header>
     <div class="header-container page-container">
       <div class="logo">
-        <img src="assets/Minha foto.png" alt="Foto de Emanoel Lima" />
+        <img src="assets/Minha foto.png" alt="Foto de Emanoel Lima" loading="lazy" />
         <span>Emanoel Lima</span>
       </div>
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-      <nav>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <nav aria-label="Navegação principal">
         <ul>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#formacao">Formação</a></li>
@@ -25,6 +25,7 @@
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
+      <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
     </div>
   </header>
   
@@ -32,16 +33,16 @@
     <div class="hero-content page-container">
       <div class="hero-text">
         <h1>Olá, sou <span>Emanoel Lima</span></h1>
-        <p>Estudante de TI, apaixonado por tecnologia, programação, esportes radicais e desafios!</p>
+        <p>Estudante de TI, apaixonado por programação, tecnologia e esportes radicais. Adoro resolver problemas reais com código!</p>
         <a href="#contato" class="cta-button">Fale Comigo!</a>
         <div class="social-links">
-          <a href="https://github.com/EmanoelLimaaa" target="_blank" title="GitHub"><img src="assets/icons8-github.svg" alt="GitHub" /></a>
-          <a href="https://linkedin.com/in/emanoellimaaa" target="_blank" title="LinkedIn"><img src="assets/icons8-linkedin-circundado.svg" alt="LinkedIn" /></a>
-          <a href="https://instagram.com/emanoelima" target="_blank" title="Instagram"><img src="assets/instagram_logo_icon_186894.svg" alt="Instagram" /></a>
+          <a href="https://github.com/EmanoelLimaaa" target="_blank" title="GitHub"><img src="assets/icons8-github.svg" alt="GitHub" loading="lazy" /></a>
+          <a href="https://linkedin.com/in/emanoellimaaa" target="_blank" title="LinkedIn"><img src="assets/icons8-linkedin-circundado.svg" alt="LinkedIn" loading="lazy" /></a>
+          <a href="https://instagram.com/emanoelima" target="_blank" title="Instagram"><img src="assets/instagram_logo_icon_186894.svg" alt="Instagram" loading="lazy" /></a>
         </div>
       </div>
       <div class="hero-image">
-        <img src="assets/Minha foto.png" alt="Minha foto"/>
+        <img src="assets/Minha foto.png" alt="Foto de Emanoel Lima" loading="lazy" />
       </div>
     </div>
   </section>
@@ -54,7 +55,7 @@
       <div class="about-content">
         <div class="about-text">
           <h3>Estudante de TI & Desenvolvedor Fullstack</h3>
-          <p>Sou Emanoel Lima, tenho 20 anos e sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento fullstack utilizando JavaScript. Tenho experiência prática em HTML, CSS, JavaScript e React, sempre priorizando boas práticas de código, usabilidade e interfaces intuitivas. Domino ferramentas como Git/GitHub, Linux e VS Code, e possuo formação técnica em Redes de Computadores e Suporte em TI, o que me proporciona uma base sólida em infraestrutura e ambientes de desenvolvimento. Minha paixão é criar soluções tecnológicas inovadoras e enfrentar desafios complexos com criatividade e eficiência.</p>
+          <p>Sou Emanoel Lima, 20 anos, cursando Análise e Desenvolvimento de Sistemas. Foco em fullstack com JS, e já criei projetos simples para praticar. Gosto de código limpo e usável. Além de tech, curto esportes radicais – isso me ensina a lidar com riscos e persistir em bugs!</p>
           <div class="skills-grid">
             <div class="skill-card" data-skill="html-css">
               <div class="skill-icon">🌐</div>
@@ -90,18 +91,18 @@
       <div class="section-title">
         <h2>Formação <span>Acadêmica</span></h2>
       </div>
-      <div class="timeline">
-        <div class="timeline-item left">
+      <div class="timeline" role="list">
+        <div class="timeline-item left" role="listitem">
           <div class="timeline-content">
             <div class="project-card">
               <div class="project-content">
                 <h3>Análise e Desenvolvimento de Sistemas</h3>
-                <p><strong>Universidade Unopar</strong> (2024 - 2026)<br />Graduação com foco em desenvolvimento fullstack, incluindo JavaScript, React, Node.js e boas práticas de programação.</p>
+                <p><strong>Universidade Unopar</strong> (2024 - 2026)<br />Graduação focando em programação, bancos de dados, redes, desenvolvimento web e mobile, engenharia e análise de software, computação em nuvem e segurança da informação.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="timeline-item right">
+        <div class="timeline-item right" role="listitem">
           <div class="timeline-content">
             <div class="project-card">
               <div class="project-content">
@@ -111,7 +112,7 @@
             </div>
           </div>
         </div>
-        <div class="timeline-item left">
+        <div class="timeline-item left" role="listitem">
           <div class="timeline-content">
             <div class="project-card">
               <div class="project-content">
@@ -121,7 +122,7 @@
             </div>
           </div>
         </div>
-        <div class="timeline-item right">
+        <div class="timeline-item right" role="listitem">
           <div class="timeline-content">
             <div class="project-card">
               <div class="project-content">
@@ -139,8 +140,8 @@
       <div class="section-title">
         <h2>Estágios <span>Realizados</span></h2>
       </div>
-      <div class="timeline">
-        <div class="timeline-item left">
+      <div class="timeline" role="list">
+        <div class="timeline-item left" role="listitem">
           <div class="timeline-content">
             <div class="project-card">
               <div class="project-content">
@@ -150,7 +151,7 @@
             </div>
           </div>
         </div>
-        <div class="timeline-item right">
+        <div class="timeline-item right" role="listitem">
           <div class="timeline-content">
             <div class="project-card">
               <div class="project-content">
@@ -160,7 +161,7 @@
             </div>
           </div>
         </div>
-        <div class="timeline-item left">
+        <div class="timeline-item left" role="listitem">
           <div class="timeline-content">
             <div class="project-card">
               <div class="project-content">
@@ -181,7 +182,7 @@
       </div>
       <div class="portfolio-grid">
         <div class="portfolio-item">
-          <img src="assets/portfolio.png" class="portfolio-img" alt="Projeto 1" />
+          <img src="assets/portfolio.png" class="portfolio-img" alt="Projeto 1" loading="lazy" />
           <div class="portfolio-overlay">
             <h3>Meu Portfólio Pessoal</h3>
             <p>Meu portfolio pessoal responsivo com HTML, CSS e JS.</p>
@@ -189,7 +190,7 @@
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="assets/cearajunino.png" class="portfolio-img" alt="Projeto 2" />
+          <img src="assets/cearajunino.png" class="portfolio-img" alt="Projeto 2" loading="lazy" />
           <div class="portfolio-overlay">
             <h3>Landing Page Ceará Junino</h3>
             <p>Landing page para anuciar o evento Ceará Junino feito em equipe utilizando HTML e CSS.</p>
@@ -197,10 +198,10 @@
           </div>
         </div>
         <div class="portfolio-item">
-          <img src="assets/foto do semaforo.png" class="portfolio-img" alt="Projeto 3" />
+          <img src="assets/foto do semaforo.png" class="portfolio-img" alt="Projeto 3" loading="lazy" />
           <div class="portfolio-overlay">
             <h3>Semáforo Inteligente</h3>
-            <p> Projeto de um semáforo inteligente com HTML, CSS e JS para o programa do Capacita Brasil.</p>
+            <p>Projeto de um semáforo inteligente com HTML, CSS e JS para o programa do Capacita Brasil.</p>
             <a href="https://github.com/EmanoelLimaaa/Semaforo-Inteligente" target="_blank" rel="noopener noreferrer">🔗</a>
           </div>
         </div>
@@ -216,7 +217,7 @@
       <div class="contact-container">
         <div class="contact-info">
           <h3>Vamos nos conectar!</h3>
-          <p>Sou estudante de programação e tecnologia, sempre em busca de novos desafios e oportunidades de crescimento. Seja para colaborar em projetos, trocar ideias ou conversar sobre desenvolvimento, estou aberto a conexões que inspirem e movimentem. Entre em contato e vamos transformar ideias em realidade.</p>
+          <p>Sou estudante de programação e tecnologia, sempre em busca de novos desafios. Seja para projetos ou trocar ideias sobre dev ou esportes, tô dentro!</p>
         </div>
         <div class="contact-ctas">
           <a href="https://t.me/@Limaaaaaa1" class="cta-card" target="_blank" rel="noopener noreferrer">
@@ -240,9 +241,9 @@
     <div class="footer-content">
       <div class="footer-logo"><span>Emanoel Lima</span></div>
       <div class="footer-social">
-        <a href="https://www.github.com/EmanoelLimaaa" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github.svg" alt="GitHub de Emanoel Lima" /></a>
-        <a href="https://www.linkedin.com/in/emanoellimaaa" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-linkedin-circundado.svg" alt="LinkedIn de Emanoel Lima" /></a>
-        <a href="https://www.instagram.com/emanoelima" target="_blank" rel="noopener noreferrer"><img src="assets/instagram_logo_icon_186894.svg" alt="Instagram de Emanoel Lima" /></a>
+        <a href="https://www.github.com/EmanoelLimaaa" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-github.svg" alt="GitHub de Emanoel Lima" loading="lazy" /></a>
+        <a href="https://www.linkedin.com/in/emanoellimaaa" target="_blank" rel="noopener noreferrer"><img src="assets/icons8-linkedin-circundado.svg" alt="LinkedIn de Emanoel Lima" loading="lazy" /></a>
+        <a href="https://www.instagram.com/emanoelima" target="_blank" rel="noopener noreferrer"><img src="assets/instagram_logo_icon_186894.svg" alt="Instagram de Emanoel Lima" loading="lazy" /></a>
       </div>
     </div>
   </footer>
