@@ -1,42 +1,43 @@
-E aí! Esse é o meu portfólio, onde mostro o que sei fazer como estudante de Análise e Desenvolvimento de Sistemas. Fiz esse site pra compartilhar meus projetos, minha formação e um pouco sobre mim. Espero que curta! 😎
-🌐 Veja online: https://emanoellimaaa.github.io/Meu-Portfolio/
+E aí! Sou Emanoel Lima, estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e esportes radicais. Este é meu portfólio pessoal, onde mostro meus projetos, formação e experiências. Fiz tudo do zero com muito código e café! 😎
 
-📌 O que tem aqui?
+🌐 **Veja online:** [emanoellimaaa.github.io/Meu-Portfolio](https://emanoellimaaa.github.io/Meu-Portfolio)
 
-Sobre Mim: Um pouco da minha história.
-Formação: Minha graduação e outros cursos.
-Estágios: Experiências de estágios e empresas que trabalhei.
-Projetos: Alguns projetos para programas e cursos que estou fazendo.
-Contato: Meus links pra você me achar e conversar.
+## 📌 O que tem aqui?
+- **Sobre Mim:** Minha história como dev e fã de esportes radicais.
+- **Formação:** Graduação e cursos técnicos em TI.
+- **Estágios:** Experiências em suporte técnico e administração.
+- **Projetos:** Trabalhos práticos em HTML, CSS e JS.
+- **Contato:** Links para GitHub, LinkedIn, Instagram e Telegram.
 
-💻 Tecnologias que usei
+## 💻 Tecnologias
+- HTML
+- CSS
+- JavaScript 
+- Git/GitHub
 
-HTML5
+## 🚀 Como rodar
+1. Clone o repositório:
+   git clone https://github.com/EmanoelLimaaa/Meu-Portfolio.git
+2. Entre na pasta:
+cd Meu-Portfolio
 
-CSS3
-
-JavaScript
-
-Git/GitHub
-
-🚀 Como rodar
-
-Clona o repositório:git clone https://github.com/EmanoelLimaaa/Portfolio.git
-
-
-Entra na pasta:cd Meu-Portfolio
-
-
-Abre o index.html no navegador (pode usar o Live Server no VS Code ou abrir direto).
+Abra o index.html no navegador
 
 📁 Estrutura
+Meu-Portfolio/
 
-index.html
+├── index.html
 
-style.css
+├── script.js
 
-script.js
+├── style.css
 
-assets/
+└── assets/ (imagens e ícones)
 
-Valeu por dar uma olhada! Se curtiu, deixa uma ⭐ no repositório! 🚀
+🛠 Desafios e aprendizados
+
+Simplifiquei o design para ser mais limpo, removendo efeitos exagerados.
+Adicionei um toggle de tema light/dark com localStorage para praticar manipulação de DOM.
+Melhorei acessibilidade 
+
+Valeu por visitar! Se curtiu, deixa uma ⭐ no repositório ou entra em contato pra trocar ideia! 🚀
