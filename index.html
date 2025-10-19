@@ -179,32 +179,95 @@
     <div class="page-container">
       <div class="section-title">
         <h2>Meus <span>Projetos</span></h2>
+        <p class="section-desc">Uma seleção dos projetos que desenvolvi durante minha jornada de aprendizado e desenvolvimento profissional.</p>
       </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item">
-          <img src="assets/portfolio.png" class="portfolio-img" alt="Projeto 1" loading="lazy" />
-          <div class="portfolio-overlay">
-            <h3>Meu Portfólio Pessoal</h3>
-            <p>Meu portfolio pessoal responsivo com HTML, CSS e JS.</p>
-            <a href="https://github.com/EmanoelLimaaa/Meu-Portfolio" target="_blank" rel="noopener noreferrer">🔗</a>
-          </div>
+
+      <div class="projects-controls">
+        <div class="filters" role="tablist" aria-label="Filtros de projetos">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
         </div>
-        <div class="portfolio-item">
-          <img src="assets/cearajunino.png" class="portfolio-img" alt="Projeto 2" loading="lazy" />
-          <div class="portfolio-overlay">
-            <h3>Landing Page Ceará Junino</h3>
-            <p>Landing page para anuciar o evento Ceará Junino feito em equipe utilizando HTML e CSS.</p>
-            <a href="https://github.com/mateusHtech/Turma-FSN2" target="_blank" rel="noopener noreferrer">🔗</a>
+      </div>
+
+      <div class="projects-grid" aria-live="polite">
+        <article class="project-card" data-category="web api">
+          <figure class="project-media">
+            <img src="assets/portfolio.png" alt="Imagem destaque - Meu Portfólio" loading="lazy" />
+          </figure>
+          <div class="project-body">
+            <h3 class="project-title">Portfólio Pessoal</h3>
+            <p class="project-desc">Site responsivo desenvolvido com HTML, CSS e JavaScript para apresentar meus projetos, habilidades e currículo de forma clara e organizada.</p>
+            <div class="tech-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://meu-projeto.example" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+              <a class="btn btn-ghost" href="https://github.com/EmanoelLimaaa/Meu-Portfolio" target="_blank" rel="noopener noreferrer">Código Fonte</a>
+            </div>
           </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="assets/foto do semaforo.png" class="portfolio-img" alt="Projeto 3" loading="lazy" />
-          <div class="portfolio-overlay">
-            <h3>Semáforo Inteligente</h3>
-            <p>Projeto de um semáforo inteligente com HTML, CSS e JS para o programa do Capacita Brasil.</p>
-            <a href="https://github.com/EmanoelLimaaa/Semaforo-Inteligente" target="_blank" rel="noopener noreferrer">🔗</a>
+        </article>
+
+        <article class="project-card" data-category="web open">
+          <figure class="project-media">
+            <img src="assets/siteecotroca.jpeg" alt="EcoTroca" loading="lazy" />
+          </figure>
+          <div class="project-body">
+            <h3 class="project-title">EcoTroca</h3>
+            <p class="project-desc">Projeto fullstack desenvolvido em equipe durante o curso da Avanti, com foco em práticas sustentáveis e reutilização de itens entre usuários</p>
+            <div class="tech-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Prisma</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Figma</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+              <a class="btn btn-ghost" href="https://github.com/mateusHtech/Eco-troca-TURMA_FSN2" target="_blank" rel="noopener noreferrer">Código Fonte</a>
+            </div>
           </div>
-        </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <figure class="project-media">
+            <img src="assets/cearajunino.png" alt="Landing Page Ceará Junino" loading="lazy" />
+          </figure>
+          <div class="project-body">
+            <h3 class="project-title">Landing Page Ceará Junino</h3>
+            <p class="project-desc">Landing page estática desenvolvida em equipe no curso Avanti com HTML e CSS, com foco em layout responsivo e acessibilidade, garantindo boa experiência em diferentes dispositivos.</p>
+            <div class="tech-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+              <a class="btn btn-ghost" href="https://github.com/mateusHtech/Turma-FSN2" target="_blank" rel="noopener noreferrer">Código Fonte</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web">
+          <figure class="project-media">
+            <img src="assets/foto do semaforo.png" alt="Semáforo Inteligente" loading="lazy" />
+          </figure>
+          <div class="project-body">
+            <h3 class="project-title">Semáforo Inteligente</h3>
+            <p class="project-desc">Protótipo interativo de semáforo desenvolvido com JavaScript, incluindo lógica de controle, animações e ajustes de tempo. Projeto individual/focado no frontend para simular o funcionamento de um semáforo inteligente.</p>
+            <div class="tech-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+              <a class="btn btn-ghost" href="https://github.com/EmanoelLimaaa/Semaforo-Inteligente" target="_blank" rel="noopener noreferrer">Código Fonte</a>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -217,7 +280,7 @@
       <div class="contact-container">
         <div class="contact-info">
           <h3>Vamos nos conectar!</h3>
-          <p>Sou estudante de programação e tecnologia, sempre em busca de novos desafios. Seja para projetos ou trocar ideias sobre dev ou esportes, tô dentro!</p>
+          <p>Entre em contato comigo para colaborações, oportunidades ou trocas de ideias sobre desenvolvimento web. Estou sempre aberto a novos desafios e projetos interessantes.</p>
         </div>
         <div class="contact-ctas">
           <a href="https://t.me/@Limaaaaaa1" class="cta-card" target="_blank" rel="noopener noreferrer">

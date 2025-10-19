@@ -76,9 +76,9 @@ const body = document.body;
 
 if (localStorage.getItem('theme') === 'light') {
   body.classList.add('light-theme');
-  themeToggle.innerHTML = '☀️'; 
+  themeToggle.innerHTML = '☀️';
 } else {
-  themeToggle.innerHTML = '🌙'; 
+  themeToggle.innerHTML = '🌙';
 }
 
 themeToggle.addEventListener('click', () => {
@@ -89,5 +89,14 @@ themeToggle.addEventListener('click', () => {
   } else {
     localStorage.setItem('theme', 'dark');
     themeToggle.innerHTML = '🌙';
+  }
+});
+
+document.querySelectorAll('.project-actions .btn-primary').forEach(btn => {
+  if (btn.getAttribute('href') === '#') {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('Este projeto ainda não está disponível para visualização. Em breve!');
+    });
   }
 });
