@@ -1,6 +1,6 @@
 E aí! Sou Emanoel Lima, estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e esportes radicais. Este é meu portfólio pessoal, onde mostro meus projetos, formação e experiências. Fiz tudo do zero com muito código e café! 😎
 
-🌐 **Veja online:** [emanoellimaaa.github.io/Meu-Portfolio](https://emanoellimaaa.github.io/Meu-Portfolio)
+🌐 **Veja online:** [emanoellimaaa.github.io/Meu-Portfolio](https://meu-portfolio-chi-rust.vercel.app/)
 
 ## 📌 O que tem aqui?
 - **Sobre Mim:** Minha história como dev e fã de esportes radicais.
