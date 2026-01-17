@@ -100,3 +100,34 @@ document.querySelectorAll('.project-actions .btn-primary').forEach(btn => {
     });
   }
 });
+
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projects = document.querySelectorAll('.project-card');
+
+filterButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const filter = button.dataset.filter;
+
+    // Remove active class from all buttons and add to the clicked one
+    filterButtons.forEach(btn => {
+      btn.classList.remove('active');
+      btn.setAttribute('aria-pressed', 'false');
+    });
+    button.classList.add('active');
+    button.setAttribute('aria-pressed', 'true');
+
+    projects.forEach(project => {
+      const projectCategories = project.dataset.category.split(' ');
+      
+      if (filter === 'all') {
+        project.style.display = 'block';
+      } else {
+        if (projectCategories.includes(filter)) {
+          project.style.display = 'block';
+        } else {
+          project.style.display = 'none';
+        }
+      }
+    });
+  });
+});

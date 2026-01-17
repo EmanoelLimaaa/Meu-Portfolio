@@ -62,6 +62,7 @@
         <div class="about-text">
           <h3>Estudante de TI & Desenvolvedor Fullstack</h3>
           <p>Sou Emanoel Lima, 20 anos, cursando Análise e Desenvolvimento de Sistemas. Foco em fullstack com JS, e já criei projetos simples para praticar. Gosto de código limpo e usável. Além de tech, curto esportes radicais – isso me ensina a lidar com riscos e persistir em bugs!</p>
+          <p>Conecte-se comigo: <a href="https://github.com/EmanoelLimaaa" target="_blank" rel="noopener noreferrer">GitHub</a> | <a href="https://www.linkedin.com/in/emanoellimaaa" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
           <div class="skills-grid">
             <div class="skill-card" data-skill="html-css">
               <div class="skill-icon">🌐</div>
@@ -86,6 +87,34 @@
             <div class="skill-card" data-skill="vs-code">
               <div class="skill-icon">💻</div>
               <h4>VS Code</h4>
+            </div>
+            <div class="skill-card" data-skill="typescript">
+              <div class="skill-icon">🔷</div>
+              <h4>TypeScript</h4>
+            </div>
+            <div class="skill-card" data-skill="nodejs">
+              <div class="skill-icon">🟢</div>
+              <h4>Node.js</h4>
+            </div>
+            <div class="skill-card" data-skill="expressjs">
+              <div class="skill-icon">🚀</div>
+              <h4>Express.js</h4>
+            </div>
+            <div class="skill-card" data-skill="postgresql">
+              <div class="skill-icon">🐘</div>
+              <h4>PostgreSQL</h4>
+            </div>
+            <div class="skill-card" data-skill="prisma">
+              <div class="skill-icon">🛡️</div>
+              <h4>Prisma</h4>
+            </div>
+            <div class="skill-card" data-skill="docker">
+              <div class="skill-icon">🐳</div>
+              <h4>Docker</h4>
+            </div>
+            <div class="skill-card" data-skill="figma">
+              <div class="skill-icon">🎨</div>
+              <h4>Figma</h4>
             </div>
           </div>
         </div>
@@ -191,11 +220,13 @@
       <div class="projects-controls">
         <div class="filters" role="tablist" aria-label="Filtros de projetos">
           <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter-btn" data-filter="landing-page" aria-pressed="false">Landing Pages</button>
+          <button class="filter-btn" data-filter="fullstack" aria-pressed="false">Fullstack</button>
         </div>
       </div>
 
       <div class="projects-grid" aria-live="polite">
-        <article class="project-card" data-category="web api">
+        <article class="project-card" data-category="landing-page">
           <figure class="project-media">
             <img src="assets/capa.png" alt="Imagem destaque - Meu Portfólio" loading="lazy" />
           </figure>
@@ -214,21 +245,22 @@
           </div>
         </article>
 
-        <article class="project-card" data-category="web open">
+        <article class="project-card" data-category="fullstack">
           <figure class="project-media">
             <img src="assets/siteecotroca.jpeg" alt="EcoTroca" loading="lazy" />
           </figure>
           <div class="project-body">
             <h3 class="project-title">EcoTroca</h3>
-            <p class="project-desc">Projeto fullstack desenvolvido em equipe durante o curso da Avanti, com foco em práticas sustentáveis e reutilização de itens entre usuários</p>
+            <p class="project-desc">Projeto fullstack desenvolvido em equipe durante o curso da Avanti, com frontend em React e backend futuro em Node.js, focado em práticas sustentáveis e reutilização de itens entre usuários</p>
             <div class="tech-tags">
+              <span class="tag">React</span>
+              <span class="tag">React Router DOM</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Bootstrap</span>
               <span class="tag">Node.js</span>
               <span class="tag">Express.js</span>
               <span class="tag">PostgreSQL</span>
               <span class="tag">Prisma</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
               <span class="tag">Figma</span>
             </div>
             <div class="project-actions">
@@ -238,7 +270,7 @@
           </div>
         </article>
 
-        <article class="project-card" data-category="web">
+        <article class="project-card" data-category="landing-page">
           <figure class="project-media">
             <img src="assets/cearajunino.png" alt="Landing Page Ceará Junino" loading="lazy" />
           </figure>
@@ -256,7 +288,7 @@
           </div>
         </article>
 
-        <article class="project-card" data-category="web">
+        <article class="project-card" data-category="landing-page">
           <figure class="project-media">
             <img src="assets/foto do semaforo.png" alt="Semáforo Inteligente" loading="lazy" />
           </figure>
@@ -269,7 +301,7 @@
               <span class="tag">JavaScript</span>
             </div>
             <div class="project-actions">
-              <a class="btn btn-primary" href="#" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
+              <a class="btn btn-primary" href="https://emanoellimaaa.github.io/Semaforo-Inteligente/" target="_blank" rel="noopener noreferrer">Ver Projeto</a>
               <a class="btn btn-ghost" href="https://github.com/EmanoelLimaaa/Semaforo-Inteligente" target="_blank" rel="noopener noreferrer">Código Fonte</a>
             </div>
           </div>
@@ -277,7 +309,52 @@
       </div>
     </div>
   </section>
-  
+
+  <section class="page-section" id="certificacoes">
+    <div class="page-container">
+      <div class="section-title">
+        <h2>Certificações</h2>
+      </div>
+      <div class="certifications-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-info">
+              <h3>Desenvolvimento Fullstack em JavaScript</h3>
+              <p>Capacita Brasil (C-Jovem)</p>
+            </div>
+          </div>
+          <div class="certification-footer">
+            <a href="#" class="certification-link">Ver certificado</a>
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-info">
+              <h3>Voxy Proficiency Achievement Certificate - Intermediate</h3>
+              <p>Voxy</p>
+            </div>
+          </div>
+          <div class="certification-footer">
+            <a href="#" class="certification-link">Ver certificado</a>
+          </div>
+        </div>
+
+        <div class="certification-card">
+          <div class="certification-header">
+            <div class="certification-info">
+              <h3>Suporte Técnico em Tecnologia da Informação</h3>
+              <p>Dell Lead</p>
+            </div>
+          </div>
+          <div class="certification-footer">
+            <a href="#" class="certification-link">Ver certificado</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="page-section" id="contato">
     <div class="page-container">
       <div class="section-title">
@@ -286,7 +363,7 @@
       <div class="contact-container">
         <div class="contact-info">
           <h3>Vamos nos conectar!</h3>
-          <p>Entre em contato comigo para colaborações, oportunidades ou trocas de ideias sobre desenvolvimento web. Estou sempre aberto a novos desafios e projetos interessantes.</p>
+          <p>Entre em contato comigo para colaborações, oportunidades ou trocas de ideias sobre desenvolvimento. Estou sempre aberto a novos desafios, projetos e oportunidades.</p>
         </div>
         <div class="contact-ctas">
           <a href="https://t.me/@Limaaaaaa1" class="cta-card" target="_blank" rel="noopener noreferrer">
@@ -300,6 +377,10 @@
           <a href="https://linkedin.com/in/emanoellimaaa" class="cta-card" target="_blank" rel="noopener noreferrer">
             <span class="cta-icon">💼</span>
             <span>LinkedIn</span>
+          </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=limaemanoe91@gmail.com" target="_blank" rel="noopener noreferrer" class="cta-card">
+            <span class="cta-icon">✉️</span>
+            <span>E-mail</span>
           </a>
         </div>
       </div>

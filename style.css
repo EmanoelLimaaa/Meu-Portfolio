@@ -855,6 +855,61 @@ footer {
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 600;
+  border: 1px solid var(--glass-border);
+}
+
+/* Colored badges inspired by GitHub */
+.tag:contains("HTML") {
+  background: #e34c26;
+  color: white;
+}
+.tag:contains("CSS") {
+  background: #1572b6;
+  color: white;
+}
+.tag:contains("JavaScript") {
+  background: #f7df1e;
+  color: black;
+}
+.tag:contains("Node.js") {
+  background: #339933;
+  color: white;
+}
+.tag:contains("Express.js") {
+  background: #000000;
+  color: white;
+}
+.tag:contains("PostgreSQL") {
+  background: #336791;
+  color: white;
+}
+.tag:contains("Prisma") {
+  background: #2d3748;
+  color: white;
+}
+.tag:contains("Figma") {
+  background: #f24e1e;
+  color: white;
+}
+.tag:contains("React") {
+  background: #61dafb;
+  color: black;
+}
+.tag:contains("Git") {
+  background: #f05032;
+  color: white;
+}
+.tag:contains("GitHub") {
+  background: #181717;
+  color: white;
+}
+.tag:contains("Linux") {
+  background: #fcc624;
+  color: black;
+}
+.tag:contains("VS Code") {
+  background: #007acc;
+  color: white;
 }
 
 /* ação */
