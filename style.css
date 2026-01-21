@@ -891,6 +891,18 @@ footer {
   background: #f24e1e;
   color: white;
 }
+.tag:contains("Tailwind CSS") {
+  background: #06b6d4;
+  color: white;
+}
+.tag:contains("Autoprefixer") {
+  background: #dd3737;
+  color: white;
+}
+.tag:contains("Bitbucket") {
+  background: #0052cc;
+  color: white;
+}
 .tag:contains("React") {
   background: #61dafb;
   color: black;

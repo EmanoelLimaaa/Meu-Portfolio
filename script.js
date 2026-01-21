@@ -94,10 +94,39 @@ themeToggle.addEventListener('click', () => {
 
 document.querySelectorAll('.project-actions .btn-primary').forEach(btn => {
   if (btn.getAttribute('href') === '#') {
+    const card = btn.closest('.project-card');
+    const title = card ? card.querySelector('.project-title') : null;
+    if (title && title.textContent === 'Dashboard Administrativo') {
+      return; 
+    }
+    
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       alert('Este projeto ainda não está disponível para visualização. Em breve!');
     });
+  }
+});
+
+// Mensagem específica para o Dashboard Administrativo
+document.querySelectorAll('.project-card').forEach(card => {
+  const title = card.querySelector('.project-title');
+  if (title && title.textContent === 'Dashboard Administrativo') {
+    const btnPrimary = card.querySelector('.btn-primary');
+    const btnGhost = card.querySelector('.btn-ghost');
+    
+    if (btnPrimary) {
+      btnPrimary.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Este projeto foi desenvolvido durante um estágio de um curso em que várias equipes fizeram o mesmo projeto. Não sabemos se o nosso foi escolhido.');
+      });
+    }
+    
+    if (btnGhost) {
+      btnGhost.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('O código fonte deste projeto está privado no Bitbucket.');
+      });
+    }
   }
 });
 
